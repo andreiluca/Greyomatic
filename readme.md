@@ -1,12 +1,12 @@
 Greyomatic WordPress theme
 =======================================================
 
-Clean wordpress theme.
+Clean wordpress theme. Non-color.
 
 How Can I Contribute?
 =======================================================
 
-* fork our repository.
+* fork my repository.
 
 <https://github.com/andreiluca/Greyomatic>
 
