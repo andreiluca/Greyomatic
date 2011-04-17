@@ -3,6 +3,10 @@ Greyomatic WordPress theme
 
 Clean wordpress theme. Non-color.
 
+Roadmap
+=======================================================
+
+Soon
 How Can I Contribute?
 =======================================================
 
@@ -12,11 +16,6 @@ How Can I Contribute?
 
 
 * send a pull request to me. i'll check and response in a few days.
-
-Roadmap
-=======================================================
-
-Soon
 
 License
 =======================================================
