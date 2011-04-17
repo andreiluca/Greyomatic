@@ -6,7 +6,13 @@ Clean wordpress theme. Non-color.
 Roadmap
 =======================================================
 
-Soon
+* Widgetized Sidebar
+* Twitter Feed
+* Clean code
+* Replace deprecated functions
+[...]
+* Add support for WP 3.x features
+
 How Can I Contribute?
 =======================================================
 
