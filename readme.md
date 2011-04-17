@@ -1,7 +1,8 @@
 Greyomatic WordPress theme
 =======================================================
 
-Clean wordpress theme. Non-color.
+Clean wordpress theme. 
+Demo: <http://www.iulidragos.org>
 
 Roadmap
 =======================================================
@@ -9,8 +10,8 @@ Roadmap
 * Widgetized Sidebar
 * Twitter Feed
 * Clean code
-* Replace deprecated functions
-[...]
+* Replace deprecated functions from WP 2.x
+* Validate HTML and CSS
 * Add support for WP 3.x features
 
 How Can I Contribute?
@@ -27,6 +28,7 @@ License
 =======================================================
 
 Theme is licensed under the GPL. It may be freely modified and copied as long as the license stays GPL. This means that you may use it for your personal and commercial projects and you may also make any changes you like.
+<http://wordpress.org>
 
 About author
 =======================================================
