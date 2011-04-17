@@ -1,7 +1,7 @@
 <div id="sidebar" class="column">
 <div class="sidebar"><h2>My personal Sidebar</h2></div>
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Greyomatic Sidebar') ) : ?>
 
 <h3><?php _e('Pages'); ?></h3>
 <ul>

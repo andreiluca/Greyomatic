@@ -10,6 +10,7 @@ Roadmap
 
 * Widgetized Sidebar
 * Twitter Feed
+* Localization
 * Clean code
 * Replace deprecated functions from WP 2.x
 * Validate HTML and CSS
