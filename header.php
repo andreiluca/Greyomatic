@@ -29,7 +29,7 @@
 <div class="menu">
 
 <ul>
-<li><a class="home" href="<?php bloginfo('url'); ?>">Home</a></li>
+<li><a class="home" href="<?php bloginfo('url'); ?>"><?php _e('Home','greyomatic'); ?></a></li>
 <?php wp_list_pages('title_li=&depth=1'); ?>
 </ul>
 

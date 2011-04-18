@@ -11,16 +11,16 @@ $post_tags = get_the_tags($post->ID);
 <div class="date"><div class="postdate"><span class="day"><?php the_time('d'); ?></span><span class="month"><?php the_time('M'); ?></span></div></div>
 <div class="comments-box"><?php echo $comments_nr; ?></div>
 <h2 class="permalink"><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-<?php the_content('Continue reading &raquo;'); ?>
-<div class="post-info">Posted on <u><?php the_time('d/m/Y'); ?></u> by <u><?php the_author(); ?></u> in <?php the_category(', '); ?></div>
+<?php the_content(__('Continue reading &raquo;','greyomatic')); ?>
+<div class="post-info"><?php _e('Posted on','greyomatic'); ?> <u><?php the_time('d/m/Y'); ?></u> by <u><?php the_author(); ?></u> in <?php the_category(', '); ?></div>
 <?php if($post_tags): ?><div class="post-info"><?php the_tags(); ?></div><?php endif; ?>
 </div>
 
 
 <?php endwhile; else: ?>
 <div class="article">
-<h2>Not found</h2>
-<p>Sorry, but you are looking for something that isn't here.</p>
+<h2><?php _e('Not Found','greyomatic'); ?></h2>
+<p><?php _e('Sorry, but you are looking for something that isn\'t here.','greyomatic'); ?></p>
 </div>
 <?php endif; ?>
 
