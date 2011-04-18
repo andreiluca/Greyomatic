@@ -1,7 +1,10 @@
 <?php
-get_header();
+/**
+ * @package WordPress
+ * @subpackage Greyomatic
+ */
 ?>
-
+<?php get_header(); ?>
 <?php
 if (have_posts()) : while (have_posts()) : the_post();
 $comments_nr = fb_get_comment_type_count('comment');

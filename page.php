@@ -1,4 +1,10 @@
 <?php
+/**
+ * @package WordPress
+ * @subpackage Greyomatic
+ */
+?>
+<?php
 get_header();
 $comments_nr = fb_get_comment_type_count('comment');
 $trackbacks_nr = fb_get_comment_type_count('pings');

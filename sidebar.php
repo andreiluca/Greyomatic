@@ -1,3 +1,9 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage Greyomatic
+ */
+?>
 <div id="sidebar" class="column">
 <div class="sidebar"><h2><?php _e('My personal Sidebar', 'greyomatic'); ?></h2></div>
 
