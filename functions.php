@@ -8,46 +8,7 @@
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER['SCRIPT_FILENAME']))
 die ('Please do not load this page directly. Thanks!');
 
-$greyomatic  = get_theme( get_current_theme() );
-define('GM_CURRENT_VERSION', $greyomatic['Version']);
-
-// SIDEBAR WIDGETS
-
-if ( function_exists('register_sidebar') ) {
-    register_sidebar(array(
-        'name' =>'Greyomatic Sidebar',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-        ));
-}
-
-if ( !is_admin() ) {
-    global $greyomatic;
-    wp_register_style( 'lightword_stylesheet', get_bloginfo( 'stylesheet_url' ), false, $greyomatic['Version'] );
-    wp_enqueue_style( 'lightword_stylesheet' );
-}
-
-/* ACTIVATION / UPDATE */
-/***************************************************/
-/* Code written by voyagerfan5761 [technobabbl.es] */
-/* for LightWord Theme on GitHub repository        */
-/***************************************************/
-
-function greyomatic_has_been_activated() {
-	# Add current version to options database, for update handler
-	add_option( 'GM_theme_version', GM_CURRENT_VERSION );
-}
-register_activation_hook( __FILE__, 'greyomatic_has_been_activated' );
-
-function greyomatic_has_been_updated() {
-	# Update database option so we don't keep running this code
-	update_option( 'GM_theme_version', GM_CURRENT_VERSION );
-}
-if( version_compare( get_option( 'GM_theme_version' ), GM_CURRENT_VERSION, '<' ) ) {
-	greyomatic_has_been_updated();
-}
+require_once(TEMPLATEPATH. '/basic_framework.php');
 
 /**
  * count for trackback, pingback, comment, pings
@@ -178,24 +139,6 @@ function nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comme
 // LOCALIZATION
 
 load_theme_textdomain('greyomatic', get_template_directory() . '/lang');
-
-// DASHBOARD
-
-add_action('wp_dashboard_setup', 'greyomatic_custom_dashboard_widgets');
-
-function greyomatic_custom_dashboard_widgets() {
-   global $wp_meta_boxes;
-
-   wp_add_dashboard_widget('custom_help_widget', 'Greyomatic WordPress Theme', 'greyomatic_custom_dashboard_help');
-}
-
-function greyomatic_custom_dashboard_help() {
-global $current_user;
-      get_currentuserinfo();
-
-echo "<p>Hi ".$current_user->display_name.", <br/><br/>Thank you for using Greyomatic theme.<br/><br/>Hope you like it!</p>";
-}
-
 
 // ENABLE FUNCTIONS
 

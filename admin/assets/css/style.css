@@ -1,0 +1,43 @@
+/*
+
+Admin page stylesheet, not necesarely applicable on current theme.
+
+Framework: Basic
+Framework URI: http://www.kis.ro
+Description: Basically basic
+Author: Andrei Luca
+
+*/
+
+#tabs > div{ display:none; }
+div.stuffbox h3{ padding:12px !important; }
+div.postbox h3{ cursor:default !important; }
+ul.tabs input.button-primary{ float:right;margin-top:-2px;padding:2px 5px; }
+ul.tabs li{ display:inline; }
+ul.tabs li a{
+text-transform:capitalize;
+position:relative;
+bottom:-6px;
+padding:7px 12px;
+border-bottom:0;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+ul.tabs li a.current{ background:#FFF;}
+ul.tabs li a.current:hover{ border-color:#BBB;color:#464646;}
+ul.tabs li a.current:visited{ border-color:#BBB;color:#464646;}
+.stuffbox{ background:#FFF; }
+
+.widefat{ border:0 !important; clear:none !important;}
+.widefat .valign{ vertical-align:middle;width:200px; }
+.widefat td{ padding-top:10px; }

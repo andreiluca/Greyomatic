@@ -14,6 +14,7 @@ Roadmap
 * Clean code
 * Replace deprecated functions from WP 2.x
 * Validate HTML and CSS
+* Theme Options
 * Add support for WP 3.x features
 
 How Can I Contribute?

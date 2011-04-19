@@ -3,7 +3,7 @@ Theme Name: Greyomatic
 Theme URI: http://wp.kis.ro/?wptheme=Greyomatic
 Description: Clean WordPress Theme
 Template: greyomatic
-Version: 0.4
+Version: 0.5.3
 Author: Andrei Luca
 Author URI: http://students.info.uaic.ro/~andrei.luca/
 */
@@ -237,7 +237,7 @@ a.more-link:active{
     text-shadow:#FFF 1px 1px 0;
 }
 
-#sidebar h3 {
+#sidebar h3.widget {
     background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -49px;
     padding: 7px 10px;
     margin: 0;
@@ -247,9 +247,9 @@ a.more-link:active{
     cursor: pointer;
     text-shadow:#FFF 1px 1px 0;
 }
-#sidebar h3:hover,
-#sidebar h3.active{ background-color: #e3e2e2; }
-#sidebar h3.active { background-position: right 7px; }
+#sidebar h3.widget:hover,
+#sidebar h3.widget .active{ background-color: #e3e2e2; }
+#sidebar h3.widget .active { background-position: right 7px; }
 #sidebar ul li a{
     display:block;
     border-top:1px solid #FFF;

@@ -4,7 +4,7 @@
  * @subpackage Greyomatic
  */
 ?>
-<div id="footer"><p>&copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a> &middot; Powered by <a href="http://www.wordpress.org">Wordpress</a></p></div>
+<div id="footer"><p>&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('title'); ?></a> &middot; Powered by <a title="WordPress" href="http://wordpress.org">WordPress</a> and developed by <a title="Andrei Luca" href="http://students.info.uaic.ro/~andrei.luca/">Andrei Luca</a> for you.</p></div>
 </div><!-- /#wrapper -->
 
 <?php wp_footer(); ?>

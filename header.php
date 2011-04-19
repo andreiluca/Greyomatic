@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/corners.css" type="text/css" media="screen" />
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.basic.js" type="text/javascript"></script>
+<?php echo get_option('analytics_code'); ?>
 </head>
 
 <body>

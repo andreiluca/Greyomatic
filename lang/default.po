@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Greyomatic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-18 13:42+0200\n"
+"POT-Creation-Date: 2011-04-19 21:43+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei@andreiluca.com>\n"
 "Language-Team: Andrei Luca <andrei@andreiluca.com>\n"
@@ -16,188 +16,244 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: comments.php:7
+#: basic_framework.php:31
+msgid " Sidebar"
+msgstr ""
+
+#: basic_framework.php:33
+msgid "Right Sidebar area"
+msgstr ""
+
+#: comments.php:13
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:17
+#: comments.php:23
 msgid "Comments"
 msgstr ""
 
-#: comments.php:18
+#: comments.php:24
 msgid "Trackbacks"
 msgstr ""
 
-#: comments.php:19
+#: comments.php:25
 msgid "( subscribe to comments on this post )"
 msgstr ""
 
-#: comments.php:32
+#: comments.php:38
 msgid "&laquo; Older Comments"
 msgstr ""
 
-#: comments.php:33
+#: comments.php:39
 msgid "Newer Comments &raquo;"
 msgstr ""
 
-#: comments.php:41
+#: comments.php:47
 msgid "No comments yet."
 msgstr ""
 
-#: comments.php:43
+#: comments.php:49
 msgid "Sorry, the comment form is closed at this time."
 msgstr ""
 
-#: comments.php:50
+#: comments.php:56
 msgid "Leave a comment"
 msgstr ""
 
-#: comments.php:53
+#: comments.php:59
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: comments.php:58
+#: comments.php:64
 #, php-format
 msgid "Logged in as %s."
 msgstr ""
 
-#: comments.php:58
+#: comments.php:64
 msgid "Log out of this account"
 msgstr ""
 
-#: comments.php:58
+#: comments.php:64
 msgid "Log out &raquo;"
 msgstr ""
 
-#: comments.php:71
+#: comments.php:77
 msgid "Name"
 msgstr ""
 
-#: comments.php:71
-#: comments.php:74
+#: comments.php:77
+#: comments.php:80
 msgid "(required)"
 msgstr ""
 
-#: comments.php:74
+#: comments.php:80
 msgid "Mail (will not be published)"
 msgstr ""
 
-#: comments.php:77
+#: comments.php:83
 msgid "Website"
 msgstr ""
 
-#: comments.php:84
+#: comments.php:90
 msgid "Submit"
 msgstr ""
 
-#: comments.php:84
+#: comments.php:90
 msgid "( Cancel )"
 msgstr ""
 
-#: comments.php:94
+#: comments.php:100
 msgid "No trackbacks yet."
 msgstr ""
 
-#: comments.php:95
+#: comments.php:101
 msgid "Trackbacks are disabled."
 msgstr ""
 
-#: functions.php:143
+#: functions.php:110
 msgid "trash it"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:111
 msgid "mark as spam"
 msgstr ""
 
-#: functions.php:145
+#: functions.php:112
 msgid "edit"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:121
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:130
 msgid "F jS, Y - H:i"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:132
 msgid "( REPLY )"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:133
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: header.php:32
+#: header.php:39
 msgid "Home"
 msgstr ""
 
-#: index.php:13
-#: page.php:14
-#: single.php:14
+#: index.php:16
+#: page.php:20
+#: single.php:20
 msgid "Continue reading &raquo;"
 msgstr ""
 
-#: index.php:21
-#: page.php:21
-#: single.php:22
+#: index.php:24
+#: page.php:27
+#: single.php:28
 msgid "Not Found"
 msgstr ""
 
-#: index.php:22
-#: page.php:22
-#: single.php:23
+#: index.php:25
+#: page.php:28
+#: single.php:29
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr ""
 
-#: sidebar.php:2
+#: sidebar.php:8
 msgid "My personal Sidebar"
 msgstr ""
 
-#: sidebar.php:6
+#: sidebar.php:12
 msgid "Pages"
 msgstr ""
 
-#: sidebar.php:11
+#: sidebar.php:17
 msgid "Categories"
 msgstr ""
 
-#: sidebar.php:16
+#: sidebar.php:22
 msgid "Blogroll"
 msgstr ""
 
-#: sidebar.php:21
+#: sidebar.php:27
 msgid "Archive"
 msgstr ""
 
-#: sidebar.php:26
+#: sidebar.php:32
 msgid "Meta"
 msgstr ""
 
-#: sidebar.php:30
+#: sidebar.php:36
 msgid "Syndicate this site using RSS"
 msgstr ""
 
-#: sidebar.php:30
+#: sidebar.php:36
 msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr ""
 
-#: sidebar.php:31
+#: sidebar.php:37
 msgid "The latest comments to all posts in RSS"
 msgstr ""
 
-#: sidebar.php:31
+#: sidebar.php:37
 msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr ""
 
-#: sidebar.php:36
-msgid "Twitter"
+#: single.php:21
+msgid "Posted on"
 msgstr ""
 
-#: single.php:15
-msgid "Posted on"
+#: admin/base.php:13
+msgid "Theme options saved."
+msgstr ""
+
+#: admin/base.php:18
+msgid "Options"
+msgstr ""
+
+#: admin/settings_template.php:15
+msgid "Theme Options"
+msgstr ""
+
+#: admin/settings_template.php:23
+msgid "About this theme"
+msgstr ""
+
+#: admin/settings_template.php:30
+msgid "It's simple and clean.<br/><br/><em>Thank you for using it.<br/>The donate button doesn't work yet :)"
+msgstr ""
+
+#: admin/settings_template.php:39
+msgid "Donate"
+msgstr ""
+
+#: admin/settings_template.php:61
+msgid "Save Changes"
+msgstr ""
+
+#: admin/hooks/back_func.php:18
+msgid "Theme Settings"
+msgstr ""
+
+#: admin/theme-options/general.php:14
+msgid "Twitter username"
+msgstr ""
+
+#: admin/theme-options/general.php:16
+msgid "Type your twitter username here, eg. <em>andreiluca</em>"
+msgstr ""
+
+#: admin/theme-options/general.php:22
+msgid "Google Analytics Code"
+msgstr ""
+
+#: admin/theme-options/general.php:24
+msgid "Paste your analytics code here, it will get applied to each page"
+msgstr ""
+
+#: widgets/twitter.php:1
+msgid "Twitter"
 msgstr ""
 

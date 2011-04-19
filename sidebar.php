@@ -7,29 +7,29 @@
 <div id="sidebar" class="column">
 <div class="sidebar"><h2><?php _e('My personal Sidebar', 'greyomatic'); ?></h2></div>
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Greyomatic Sidebar') ) : ?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(AL_THEMENAME . ' Sidebar') ) : ?>
 
-<h3><?php _e('Pages', 'greyomatic'); ?></h3>
+<h3 class="widget"><?php _e('Pages', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_list_pages('title_li='); ?>
 </ul>
 
-<h3><?php _e('Categories', 'greyomatic'); ?></h3>
+<h3 class="widget"><?php _e('Categories', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_list_categories('title_li='); ?>
 </ul>
 
-<h3><?php _e('Blogroll', 'greyomatic'); ?></h3>
+<h3 class="widget"><?php _e('Blogroll', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_list_bookmarks('title_li=&categorize=0'); ?>
 </ul>
 
-<h3><?php _e('Archive', 'greyomatic'); ?></h3>
+<h3 class="widget"><?php _e('Archive', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_get_archives('type=monthly'); ?>
 </ul>
 
-<h3><?php _e('Meta', 'greyomatic'); ?></h3>
+<h3 class="widget"><?php _e('Meta', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_register(); ?>
 <li><?php wp_loginout(); ?></li>
@@ -39,6 +39,5 @@
 </ul>
 
 <?php endif; ?>
-<div class="sidebar"><h2><?php _e('Twitter', 'greyomatic'); ?></h2></div>
-
+<?php if(get_option('twitter_username')) include(TEMPLATEPATH."/widgets/twitter.php"); ?>
 </div><!-- /#sidebar -->
