@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Greyomatic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-19 21:43+0200\n"
+"POT-Creation-Date: 2011-04-20 00:39+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei@andreiluca.com>\n"
 "Language-Team: Andrei Luca <andrei@andreiluca.com>\n"
@@ -242,7 +242,7 @@ msgid "Twitter username"
 msgstr ""
 
 #: admin/theme-options/general.php:16
-msgid "Type your twitter username here, eg. <em>andreiluca</em>"
+msgid "Type your twitter username here, eg.  "
 msgstr ""
 
 #: admin/theme-options/general.php:22

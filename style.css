@@ -3,7 +3,7 @@ Theme Name: Greyomatic
 Theme URI: http://wp.kis.ro/?wptheme=Greyomatic
 Description: Clean WordPress Theme
 Template: greyomatic
-Version: 0.5.3
+Version: 0.5.4
 Author: Andrei Luca
 Author URI: http://students.info.uaic.ro/~andrei.luca/
 */
@@ -43,9 +43,7 @@ a:hover{color:#666;}
 
 a:active{position:relative;top:1px;}
 
-ol, ul {
-	list-style: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -68,6 +66,10 @@ p{
     line-height:1.5;
 }
 
+.hentry ol,
+.hentry ul{ margin:20px 0 20px 45px;}
+.hentry ul li,
+.hentry ol li{line-height:20px;}
 
 
 /* LOGO
@@ -250,6 +252,7 @@ a.more-link:active{
 #sidebar h3.widget:hover,
 #sidebar h3.widget .active{ background-color: #e3e2e2; }
 #sidebar h3.widget .active { background-position: right 7px; }
+#sidebar ul{ list-style:none; }
 #sidebar ul li a{
     display:block;
     border-top:1px solid #FFF;
@@ -422,7 +425,7 @@ li.bypostauthor{border:1px solid #BBBBBB !important; }
 }
 
 /* WP */
-blockquote{margin:20px 10px 10px 5px;border-left:4px solid #DDD;padding:0 5px 0 5px;font-size:9px;text-align:justify;}
+blockquote{margin:20px 10px 10px 5px;border-left:4px solid #DDD;padding:5px 5px 5px 10px;text-align:justify;font-style:italic;background:#FAFAFA;}
 .commenttext blockquote{border-left:4px solid #B6B6B5;}
 .wp-caption{border:1px solid #ddd;text-align:center;background-color:#f3f3f3;padding-top:4px;}
 .wp-caption img{border:none;margin:0;padding:0;}
@@ -440,4 +443,15 @@ abbr, acronym, span.abbr{cursor:help;border-bottom:1px dotted #000;}
 .wp_syntax table td { border:0 !important; }
 img.wp-smiley{border:0px;vertical-align:middle;}
 
-
+/* WIDGETS */
+#calendar_wrap{margin:0;}
+#wp-calendar {font-size: 1.2em;empty-cells: show;line-height:5px;margin-top:10px;}
+#wp-calendar a {font-size: 1.0em;display: block;font-weight: bold;}
+#wp-calendar #next a {padding-right: 10px;text-align: right;}
+#wp-calendar #prev a {padding-left: 10px;text-align: left;}
+#wp-calendar caption {width:98.8%;padding:10px 5px;margin:0;text-transform: uppercase;font-weight: lighter;font-size: .8em;color: #444;text-align: left;background:#C2C2C2;}
+#wp-calendar th {padding: 4px 5px 4px 5px;font-weight: 700;font-size: .8em;color: #666;text-align: center;background: #f4f4f4;}
+#wp-calendar td {padding: 6px 5px 6px 5px;text-align: center;}
+#wp-calendar td#today {background: #e0e0e0;}
+#wp-calendar td#prev a {padding: 0;text-align: left;font-weight: normal;}
+#wp-calendar td#next a {padding: 0;text-align: right;font-weight: normal;}
