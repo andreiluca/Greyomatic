@@ -4,10 +4,9 @@
  * @subpackage Greyomatic
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html <?php language_attributes('xhtml') ?>>
 
 <head>
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
@@ -24,19 +23,19 @@
 <?php echo get_option('analytics_code'); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <div id="wrapper">
 
-<h1 id="logo"><a class="extend" title="<?php bloginfo("title"); ?>" href="<?php bloginfo('url'); ?>" name="top"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="<?php bloginfo("title"); ?>" /></a></h1>
-<img src="<?php bloginfo('template_directory'); ?>/images/light.png" class="light" />
+<h1 id="logo"><a class="extend" title="<?php bloginfo("title"); ?>" href="<?php echo home_url(); ?>" name="top"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="<?php bloginfo("title"); ?>" /></a></h1>
+<img src="<?php echo get_template_directory_uri() ?>/images/light.png" class="light" />
 
 <div class="round">
-<div id="body<?php echo $body_type; ?>">
+<div id="body">
 
 <div class="menu">
 
 <ul>
-<li><a class="home" href="<?php bloginfo('url'); ?>"><?php _e('Home','greyomatic'); ?></a></li>
+<li><a class="home" href="<?php echo home_url(); ?>"><?php _e('Home','greyomatic'); ?></a></li>
 <?php wp_list_pages('title_li=&depth=1'); ?>
 </ul>
 

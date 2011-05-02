@@ -22,7 +22,7 @@ define('AL_THEMESLUG', $theme_data['Template']);
 define('AL_ADMINPATH', 	TEMPLATEPATH . '/admin/');
 define('AL_HOOKSPATH', 	AL_ADMINPATH . 'hooks/');
 define('AL_OPTPATH', 	AL_ADMINPATH . 'theme-options/');
-define('AL_ASSETSPATH', get_bloginfo('template_url') . '/admin/assets/');
+define('AL_ASSETSPATH', get_template_directory_uri() . '/admin/assets/');
 
 // Register Sidebar
 function al_widgets_init() {

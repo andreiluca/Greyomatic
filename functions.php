@@ -85,7 +85,7 @@ if ( !function_exists('fb_update_comment_type_cache') ) {
 function comment_tabs(){
 if(is_single()||is_page()){
 ?>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/tabs.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/tabs.js"></script>
 <script type="text/javascript">jQuery(document).ready(function(){jQuery('tabs').tabs({linkClass : 'tabs',containerClass : 'tab-content',linkSelectedClass : 'selected',containerSelectedClass : 'selected',onComplete : function(){}});});</script>
 <?php
 }
@@ -117,7 +117,7 @@ echo ' )';
 // SPAM PROTECT
 
 function check_referrer() {
-if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == “”) {
+if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == "") {
 wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, bugger off!','lightword') );
 }
 }
@@ -134,7 +134,7 @@ function nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comme
 <?php
 }
 
-
+add_theme_support( 'automatic-feed-links' );
 
 // LOCALIZATION
 

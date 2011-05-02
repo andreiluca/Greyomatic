@@ -59,7 +59,7 @@ $oddcomment = 'alt ';
 <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.','greyomatic'), get_option('siteurl')."/wp-login.php?redirect_to=".urlencode(get_permalink()));?></p>
 <?php else : ?>
 
-<form action="<?php bloginfo('wpurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+<form action="<?php echo site_url(); ?>/wp-comments-post.php" method="post" id="commentform">
 <?php if ( $user_ID ) : ?>
 <p><?php printf(__('Logged in as %s.','greyomatic'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account','greyomatic') ?>"><?php _e('Log out &raquo;','greyomatic'); ?></a></p>
 
@@ -87,7 +87,7 @@ $oddcomment = 'alt ';
 <div class="clear"></div>
 <?php endif; ?>
 <div class="clear"></div>
-<p><input name="submit" type="submit" id="submit" tabindex="4" accesskey="s" value="<?php echo attribute_escape(__('Submit','greyomatic')); ?>" /><?php cancel_comment_reply_link(__('( Cancel )', 'greyomatic')); ?><br class="clear"/></p><br/>
+<p><input name="submit" type="submit" id="submit" tabindex="4" accesskey="s" value="<?php echo esc_attr(__('Submit','greyomatic')); ?>" /><?php cancel_comment_reply_link(__('( Cancel )', 'greyomatic')); ?><br class="clear"/></p><br/>
 <?php comment_id_fields(); ?>
 <?php do_action('comment_form', $post->ID); ?>
 </form>

@@ -15,7 +15,7 @@ function al_admin() {
 }
 
 function al_admin_init() {
-    add_menu_page(AL_THEMENAME . " " . __("Options","basic"), AL_THEMENAME . " " . __("Options",AL_THEMESLUG), 'edit_themes', basename(__FILE__), 'al_admin', AL_ASSETSPATH . "images/framework_icon.png", 62);
+    add_theme_page(AL_THEMENAME . " " . __("Options","basic"), AL_THEMENAME . " " . __("Options",AL_THEMESLUG), 'edit_themes', basename(__FILE__), 'al_admin', AL_ASSETSPATH . "images/framework_icon.png", 62);
 }
 
 function al_admin_assets() {
