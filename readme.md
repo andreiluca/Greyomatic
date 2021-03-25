@@ -3,7 +3,7 @@ Greyomatic WordPress theme
 
 Clean wordpress theme. 
 
-Demo: <http://www.iulidragos.org>
+![greyomatic screenshot](https://i.imgur.com/vtf27Zx.png)
 
 Roadmap
 =======================================================
