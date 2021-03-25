@@ -13,7 +13,13 @@ $comments_nr = fb_get_comment_type_count('comment');
 <div class="date"><div class="postdate"><span class="day"><?php the_time('d'); ?></span><span class="month"><?php the_time('M'); ?></span></div></div>
 <div class="comments-box"><?php echo $comments_nr; ?></div>
 <h2 class="permalink"><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-<?php the_content(__('Continue reading &raquo;','greyomatic')); ?>
+
+<?php if (has_post_thumbnail( $post->ID ) ): ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-	-thumbnail' ); ?>
+<img src="<?php echo $image[0]; ?>" class="postthumbnail">
+<?php endif; ?>
+
+<?php if (null !== the_excerpt()) { the_content("<span class=\"continue\">" . __('Continue reading &raquo;', 'greyomatic') . " '" . the_title('', '', false) . "'</span>"); } ?>
 <div class="clear"></div>
 <!--<div class="post-info">Posted on <u><?php the_time('d/m/Y'); ?></u> by <u><?php the_author(); ?></u> in <?php the_category(', '); ?></div>-->
 </div>

@@ -1,11 +1,10 @@
 /*
 Theme Name: Greyomatic
-Theme URI: http://wp.kis.ro/?wptheme=Greyomatic
+Theme URI: https://github.com/andreiluca/Greyomatic
 Description: Clean WordPress Theme
-Template: greyomatic
 Version: 0.5.4
 Author: Andrei Luca
-Author URI: http://students.info.uaic.ro/~andrei.luca/
+Author URI: https://andreiluca.com/
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -265,8 +264,12 @@ a.more-link:active{
 }
 #sidebar ul li a:hover{ background-color:#F7F7F7; }
 
-
-
+.postthumbnail{
+    max-width: 90%; max-height: 300px; 
+    display: block; /*clear: both; */
+    margin-left: auto; margin-right: auto;
+    margin-top: 1.35em; margin-bottom: 1.35em;
+}
 
 /* SIDEBOX
 ----------------------------------------------*/

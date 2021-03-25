@@ -8,7 +8,6 @@ Demo: <http://www.iulidragos.org>
 Roadmap
 =======================================================
 
-* Widgetized Sidebar
 * Twitter Feed
 * Localization
 * Clean code
