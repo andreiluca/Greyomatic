@@ -9,6 +9,7 @@
 <html <?php language_attributes('xhtml') ?>>
 
 <head>
+<meta name="viewport" content="width=550">
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.ico" />

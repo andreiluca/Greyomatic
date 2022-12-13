@@ -475,8 +475,23 @@ img.wp-smiley{border:0px;vertical-align:middle;}
 
 @media screen and (max-width: 600px) {
     #sidebar { padding-bottom: 32px !important; padding-top: 32px !important; }
-}
 
-@media screen and (max-width: 600px) {
     #body, #sidebar { width: 100% !important; }
+    #sidebar h3.widget{
+    padding: 12px 24px;
+    font-size: 1.85em;
+    background-size: 28px;
+    }
+
+    #sidebar ul li a{
+        padding: 1.15em 47px;
+        font-size: 1.15em;
+    }
+    
+    .menu ul li a {
+        border: 2px double #c0c0c0;
+        padding: 0.85em 12px;
+        margin-right: 1.35em;
+    }
+
 }
