@@ -492,6 +492,7 @@ img.wp-smiley{border:0px;vertical-align:middle;}
         border: 2px double #c0c0c0;
         padding: 0.85em 12px;
         margin-right: 1.35em;
+        text-decoration: none;
     }
 
 }
