@@ -14,6 +14,16 @@
 <?php wp_list_pages('title_li='); ?>
 </ul>
 
+<h3 class="widget"><?php _e('Search', 'greyomatic'); ?></h3>
+<ul>
+<form method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+	<div><input type="text" value="<?php _e('Search', 'greyomatic'); ?>" onblur="this.value=(this.value=='') ? '<?php _e('Search', 'greyomatic'); ?>' : this.value;" onfocus="this.value=(this.value=='<?php _e('Search', 'greyomatic'); ?>') ? '' : this.value;" name="s" id="s" />
+		<input type="submit" id="searchsubmit" value="<?php _e('Search', 'greyomatic'); ?>" />
+	</div>
+</form>
+</ul>
+
+
 <h3 class="widget"><?php _e('Categories', 'greyomatic'); ?></h3>
 <ul>
 <?php wp_list_categories('title_li='); ?>

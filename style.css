@@ -1,11 +1,10 @@
 /*
 Theme Name: Greyomatic
-Theme URI: http://wp.kis.ro/?wptheme=Greyomatic
+Theme URI: https://github.com/andreiluca/Greyomatic
 Description: Clean WordPress Theme
-Template: greyomatic
 Version: 0.5.4
 Author: Andrei Luca
-Author URI: http://students.info.uaic.ro/~andrei.luca/
+Author URI: https://andreiluca.com/
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -29,6 +28,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 }
+
+/* desbest edit */
+input { max-width: 90%; }
 
 /* GENERAL
 ----------------------------------------------*/
@@ -234,6 +236,7 @@ a.more-link:active{
     height:52px;
     border-bottom:2px solid #D2D2D2;
     background:url(images/fade.png) repeat-x;
+    /* float: right; width: 138px; */
 }
 
 .sidebar h2{
@@ -265,8 +268,12 @@ a.more-link:active{
 }
 #sidebar ul li a:hover{ background-color:#F7F7F7; }
 
-
-
+.postthumbnail{
+    max-width: 90%; max-height: 300px; 
+    display: block; /*clear: both; */
+    margin-left: auto; margin-right: auto;
+    margin-top: 1.35em; margin-bottom: 1.35em;
+}
 
 /* SIDEBOX
 ----------------------------------------------*/
@@ -376,7 +383,7 @@ li.bypostauthor{border:1px solid #BBBBBB !important; }
 #respond label{ font-size:10px; }
 
 #respond .personal-info{
-  background-color:#EEE;
+  background-color:#EE;
   width:250px;
   float:left;
   border:1px solid #E5E2E0;
@@ -457,3 +464,35 @@ img.wp-smiley{border:0px;vertical-align:middle;}
 #wp-calendar td#today {background: #e0e0e0;}
 #wp-calendar td#prev a {padding: 0;text-align: left;font-weight: normal;}
 #wp-calendar td#next a {padding: 0;text-align: right;font-weight: normal;}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+    #wrapper {
+        width: 95%;
+    }
+    #body { width: 69.6% !important; } #sidebar { width: 30% !important; }
+}
+
+@media screen and (max-width: 600px) {
+    #sidebar { padding-bottom: 32px !important; padding-top: 32px !important; }
+
+    #body, #sidebar { width: 100% !important; }
+    #sidebar h3.widget{
+    padding: 12px 24px;
+    font-size: 1.85em;
+    background-size: 28px;
+    }
+
+    #sidebar ul li a{
+        padding: 1.15em 47px;
+        font-size: 1.15em;
+    }
+    
+    .menu ul li a {
+        border: 2px double #c0c0c0;
+        padding: 0.85em 12px;
+        margin-right: 1.35em;
+        text-decoration: none;
+    }
+
+}
